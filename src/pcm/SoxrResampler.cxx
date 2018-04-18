@@ -51,6 +51,11 @@ static constexpr struct {
 	{ SOXR_MQ, "medium" },
 	{ SOXR_LQ, "low" },
 	{ SOXR_QQ, "quick" },
+	{ SOXR_32_BITQ, "32bit" },
+ 	{ SOXR_LSR0Q, "best sinc" },
+ 	{ SOXR_LINEAR_PHASE, "linear phase" },
+ 	{ SOXR_MINIMUM_PHASE, "minimum phase" },
+ 	{ SOXR_STEEP_FILTER, "steep filter" },	
 	{ SOXR_INVALID_RECIPE, nullptr }
 };
 
