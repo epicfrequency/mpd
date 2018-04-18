@@ -40,7 +40,7 @@ struct LeftShiftSampleConvert {
 		      "Source format must be smaller than destination format");
 
 	constexpr static DV Convert(SV src) {
-		return DV(src) << (DstTraits::BITS - SrcTraits::BITS);
+		return DV(src) << (DstTraits::BITS - SrcTraits::BITS-1); // 6db headroom to prevent overshoot
 	}
 };
 
