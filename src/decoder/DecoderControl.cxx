@@ -80,7 +80,7 @@ DecoderControl::SetReady(const AudioFormat audio_format,
 	      out_audio_format.sample_rate=384000;
               out_audio_format.format=SampleFormat::S32;       
                 }
-
+	}
 	seekable = _seekable;
 	total_time = _duration;
 
