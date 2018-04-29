@@ -314,7 +314,7 @@ initialize_decoder_and_player(const ReplayGainConfig &replay_gain_config)
 
 	const unsigned buffered_chunks = buffer_size / CHUNK_SIZE;
 
-	if (buffered_chunks >= 1 << 15)
+	if (buffered_chunks >= 1 << 18) /* increase buffer size 8x from <<15 to <<18, allow for play from memory*/
 		FormatFatalError("buffer size \"%lu\" is too big",
 				 (unsigned long)buffer_size);
 
