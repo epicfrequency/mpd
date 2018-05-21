@@ -21,3 +21,14 @@ cd /root/MPD
 make install -j6
 
 cp /usr/local/bin/mpd /usr/bin/mpdsacd
+systemctl stop mpd
+rm /usr/bin/mpd
+cp /usr/local/bin/mpd /usr/bin/
+
+systemctl daemon-reload
+
+systemctl start mpd
+
+
+
+
