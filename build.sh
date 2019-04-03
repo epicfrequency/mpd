@@ -31,4 +31,4 @@ systemctl start mpd
 
 
 
-
+# don't forget to add /etc/mpd.conf in lib/systemd/system/mpd.service
