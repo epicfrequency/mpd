@@ -16,7 +16,7 @@ git clone https://github.com/epicfrequency/MPD
 cd /root/MPD
 
 ./autogen.sh 
-./configure --enable-sacdiso --disable-iso9660
+./configure --enable-sacdiso --enable-dvdaiso --disable-iso9660
 
 make install -j6
 
