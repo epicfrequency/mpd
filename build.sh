@@ -1,5 +1,7 @@
 
-systemctl stop mpdcd /root
+systemctl stop mpd
+
+cd /root
 
 wget https://downloads.sourceforge.net/project/pupnp/pupnp/libUPnP%201.6.25/libupnp-1.6.25.tar.bz2
 tar -xvf *.bz2
