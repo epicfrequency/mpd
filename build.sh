@@ -1,4 +1,5 @@
-cd /root
+
+systemctl stop mpdcd /root
 
 wget https://downloads.sourceforge.net/project/pupnp/pupnp/libUPnP%201.6.25/libupnp-1.6.25.tar.bz2
 tar -xvf *.bz2
@@ -16,14 +17,13 @@ git clone https://github.com/epicfrequency/MPD
 cd /root/MPD
 
 ./autogen.sh 
-./configure --enable-sacdiso --enable-dvdaiso --disable-iso9660
+./configure --enable-sacdiso --enable-dvdaiso --disable-iso9660  ----prefix=/usr --sysconfdir=/etc
+
+cp /usr/bin/mpd /usr/bin/mpdbackup
 
 make install -j6
 
-cp /usr/local/bin/mpd /usr/bin/mpdsacd
-systemctl stop mpd
-rm /usr/bin/mpd
-cp /usr/local/bin/mpd /usr/bin/
+cp /usr/bin/mpd /usr/bin/mpdsacd
 
 systemctl daemon-reload
 
