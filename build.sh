@@ -19,7 +19,7 @@ git clone https://github.com/epicfrequency/MPD
 cd /root/MPD
 
 ./autogen.sh 
-./configure --enable-sacdiso --enable-dvdaiso --disable-iso9660  ----prefix=/usr --sysconfdir=/etc
+./configure --enable-sacdiso --enable-dvdaiso --disable-iso9660  --prefix=/usr --sysconfdir=/etc
 
 cp /usr/bin/mpd /usr/bin/mpdbackup
 
