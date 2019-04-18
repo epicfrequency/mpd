@@ -3,7 +3,7 @@ systemctl stop mpd
 
 
 
-apt-get -y install build-essential automake autoconf libtool pkg-config libcurl4-openssl-dev intltool libxml2-dev libgtk2.0-dev libnotify-dev libglib2.0-dev libevent-dev dh-make  libboost-dev libmpdclient-dev libsystemd-dev libicu-dev libexpat1-dev libssl-dev libpugixml-dev libavformat-dev libflac-dev libcue-dev libsndfile-dev libid3tag0-dev libsoxr-dev libfaad-dev libmad0-dev 
+apt-get -y install bzip2 build-essential automake autoconf libtool pkg-config libcurl4-openssl-dev intltool libxml2-dev libgtk2.0-dev libnotify-dev libglib2.0-dev libevent-dev dh-make  libboost-dev libmpdclient-dev libsystemd-dev libicu-dev libexpat1-dev libssl-dev libpugixml-dev libavformat-dev libflac-dev libcue-dev libsndfile-dev libid3tag0-dev libsoxr-dev libfaad-dev libmad0-dev 
 
 cd /root
 
